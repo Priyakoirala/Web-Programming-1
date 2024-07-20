@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ElegantEnsembles Clothing Store</title>
+    <!-- Favicon -->
+    <link rel="icon" href="Pictures/Logo.png" type="image/png">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css"> <!-- Add specific styles for the contact page -->
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-flex">
+            <div class="logo-title">
+                <img src="Pictures/Logo.png" alt="ElegantEnsembles Logo" class="logo">
+                <h1>ElegantEnsembles Clothing Store</h1>
+            </div>
+            <div class="search-login">
+                <input type="text" id="search" name="search" 
+                placeholder="Search for products..." class="search-box">
+                <button type="submit" class="search-button">Search</button>
+                <nav class="nav-links">
+                    <a href="login.html">Login</a> &nbsp; | &nbsp;
+                    <a href="carts.html">My Carts</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html"><u>Home</u></a> &nbsp; | &nbsp;
+
+        <!-- Collection Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn"><u>Collection</u></button>
+            <div class="dropdown-content">
+                <a href="#boy-dress">Boy Dress</a>
+                <a href="#girl-dress">Girl Dress</a>
+                <a href="#Latest-addition">Latest Addition</a>
+                <a href="#popular-choice">Popular Choice</a>
+                <a href="#jwellery">Jwellery</a>
+            </div>
+        </div>
+
+        &nbsp; | &nbsp;
+        <a href="faqs.html"><u>FAQs</u></a> &nbsp; | &nbsp;
+        <!--<a href="contact.html" class="active"><u>Contact Us</u></a>-->
+    </nav>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            
+            <!-- Welcome Message -->
+            <p>Welcome to our Customer Support hub at Elegant Ensembles!  
+                Whether you have inquiries or need assistance, we're here to help. 
+                Reach out using the options below,  
+                and expect a prompt response customized to your needs.</p>
+            
+            <h3>Contact Us Form</h3>
+            <p> For any inquiries, kindly fill out the form below. 
+                </p>We are committed to responding within 24 hours to provide you with assistance.
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Phone (optional):</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br><br>
+                <button type="submit">Send</button>
+            </form>
+            
+            <br> <!-- Break between form and location -->
+
+            <!-- Location Information -->
+            <h3>Our Location</h3>
+            <p></p>Come visit us at Elegant Ensembles, where style meets elegance.
+            <p><strong>Kadaghari, Kathmandu</strong></p>
+            <p>We eagerly await your arrival during our regular business hours.</p>
+            <a href="https://maps.app.goo.gl/ggCarvpb4oriXfKt7?g_st=ic" 
+            target="_blank"><img src="Pictures/Location.jpg" 
+            alt="Location Map" class="location-map"></a>
+            <br><br>
+        
+            <p>Opening Hours:</p>
+            <ul>
+                <li>Monday - Sunday: 10AM - 8PM</li>
+                <li>Saturday: Closed</li>
+            </ul>
+
+            <br> <!-- Break between location and additional contact details -->
+
+            <!-- Additional Contact Details -->
+            <h3>Additional Contact Information</h3>
+            <p>In case you need immediate assistance, please feel free to contact us using the provided contact information below:</p>
+            <table class="contact-info-table">
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td><a href="tel:+977-9823358077">+977-9823358077</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td><a href="mailto:info@ElegantEnsembles.com">info@ElegantEnsembles.com</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Customer Support:</strong></td>
+                    <td><a href="mailto:support@ElegantEnsembles.com">support@ElegantEnsembles.com</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Follow Us:</strong></td>
+                    <td>
+                        <a href="https://www.facebook.com/profile.php?id=61560090484375&mibextid=LQQJ4d" 
+                        target="_blank">
+                            Facebook</a> | 
+                        <a href="https://www.instagram.com/ElegantEnsembles" target="_blank">Instagram</a> | 
+                        <a href="https://twitter.com/ElegantEnsembles" target="_blank">Twitter</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ElegantEnsembles Clothing Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
