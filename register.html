@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - The Elegant Ensemble</title>
+    <title>Register - The Elegant Ensemble</title>
     <!-- Favicon -->
     <link rel="icon" href="Pictures/Logo.png" type="image/png">
     <!-- External CSS -->
@@ -31,12 +31,14 @@
                 </div>
             </div>
         </div>
-    </header>
-
+        <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+    <label for="menu-toggle" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
     <nav class="main-nav">
         <a href="index.html"><u>Home</u></a> &nbsp; |
-
-        <!-- Collection Dropdown -->
         <div class="dropdown">
             <button class="dropbtn"><u>Collection</u></button>
             <div class="dropdown-content">
@@ -47,48 +49,51 @@
                 <a href="jewelry.html">Jewelry</a>
             </div>
         </div>
-
         &nbsp; | &nbsp;
         <a href="faqs.html"><u>FAQs</u></a> &nbsp; | &nbsp;
-    <!--- <a href="contact.html"><u>Contact Us</u></a>-->
+        <a href="contact.html"><u>Contact Us</u></a>
     </nav>
+    </header>
 
     <main>
-        <div id="contact">
-            <div class="contact-container">
-                <div class="contact-form">
-                    <h2>Contact Us</h2>
-                    <form action="/submit-form" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-    
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-    
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-    
-                        <button class="contactbtn" type="submit">Send</button>
-                    </form>
-                </div>
-                <div class="location">
-                    <h2>Our Location</h2>
-                    <p>Kadaghari, Kathmandu<br><br>Opening Hours:
-                    <ul>
-                        <li>Monday - sunday: 10AM - 8PM</li>
-                        <li>Saturday: Closed</li>
-                    </ul></p>
-                    <iframe src=<iframe src=<iframe src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.001243697442!2d85.32137247525417!3d27.717247876176902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19007679e1c1%3A0xe8b6e5240c7f2ad9!2sKadaghari!5e0!3m2!1sen!2snp!4v1722001697785!5m2!1sen!2snp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-            
+
+    <div class="container">
+        <h2>Register Account</h2>
+        <form action="/submit_registration" method="POST">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required pattern="\S+">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+
     </main>
 
-    <footer>
-        <p>&copy; 2024 The Elegant Ensemble.</p>
+    <footer class="footer">
+        <p>&copy; 2024 The Elegant Ensemble. All rights reserved.</p>
     </footer>
 
+
     <script src="search.js"></script>
+
 </body>
+
 </html>

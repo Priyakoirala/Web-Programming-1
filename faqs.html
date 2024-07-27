@@ -4,46 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs - ElegantEnsembles Clothing Store</title>
+    <title>FAQs - The Elegant Ensemble</title>
     <!-- Favicon -->
     <link rel="icon" href="Pictures/Logo.png" type="image/png">
     <!-- External CSS -->
-    <link rel="stylesheet" href="collection.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="faqs.css"> <!-- Add specific styles for the FAQ page -->
 </head>
 
 <body>
-    <header class="header-container">
-        <div class="header-flex">
-            <div class="logo-title">
-                <img src="Pictures/Logo.png" alt="ElegantEnsembles Logo" class="logo">
-                <h1>ElegantEnsembles Clothing Store</h1>
-            </div>
-            <div class="search-login">
-                <input type="text" id="search" name="search" 
-                placeholder="Search for products..." class="search-box">
-                <button type="submit" class="search-button">Search</button>
-                <nav class="nav-links">
-                    <a href="login.html">Login</a> &nbsp; | &nbsp;
-                    <a href="carts.html">My Carts</a>
-                </nav>
+
+    <header>
+        <div class="header-container">
+            <div class="header-flex">
+                <div class="logo-title">
+                    <img src="Pictures/Logo.png" alt="The Elegant Ensemble Logo" class="logo">
+                    <h1>The Elegant Ensemble</h1>
+                </div>
+                <div class="search-login">
+                    <input type="text" id="search" name="search" placeholder="Search for products...">
+                    <button type="submit">Search</button>
+                    <div id="search-suggestions" class="suggestions-dropdown"></div>
+                    <nav>
+                        <a href="login.html">Login</a> &nbsp; |
+                        <a href="carts.html">My Carts</a>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
 
     <nav class="main-nav">
-        <a href="index.html"><u>Home</u></a> &nbsp; | &nbsp;
+        <a href="index.html"><u>Home</u></a> &nbsp; |
 
         <!-- Collection Dropdown -->
         <div class="dropdown">
             <button class="dropbtn"><u>Collection</u></button>
             <div class="dropdown-content">
-                <a href="#boy-dress">Boy Dress</a>
-                <a href="#girl-dress">Girl Dress</a>
-                <a href="#latest-addition">Latest Addition</a>
-                <a href="#popular-choice">Popular Choice</a>
-                <a href="#jwellery">Jwellery</a>
+                <a href="Ensemblesforboys.html">Ensembles for Boys</a>
+                <a href="Ensemblesforgirls.html">Ensembles for Girls</a>
+                <a href="latestaddition.html">Latest Addition</a>
+                <a href="popularchoice.html">Popular Choice</a>
+                <a href="jewelry.html">Jewelry</a>
             </div>
         </div>
 
@@ -131,8 +132,7 @@
                 <tr>
                     <td>
                         <details>
-                            <summary><strong>
-                                What should I do if I receive a damaged product?</strong></summary>
+                           <summary><strong> What should I do if I receive a damaged product?</strong></summary>
                             <p>In the event of receiving a damaged product, 
                                 kindly reach out to us promptly via our  <a href="contact.html">
                                     Contact Us
@@ -177,8 +177,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 ElegantEnsembles Clothing Store. All rights reserved.</p>
+        <p>&copy; 2024 The Elegant Ensemble. All rights reserved.</p>
     </footer>
+
+    <script src="search.js"></script>
 </body>
 
 </html>
