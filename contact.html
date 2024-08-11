@@ -9,6 +9,10 @@
     <link rel="icon" href="Pictures/Logo.png" type="image/png">
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+    <!--Bootsrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -17,41 +21,56 @@
         <div class="header-container">
             <div class="header-flex">
                 <div class="logo-title">
-                    <img src="Pictures/Logo.png" alt="The Elegant Ensemble Logo" class="logo">
-                    <h1>The Elegant Ensemble</h1>
+                    <img src="Pictures/Logo.png" alt="TheElegantEnsemble Logo" class="logo">
+                    <h1><b>The Elegant Ensemble</b></h1>
                 </div>
                 <div class="search-login">
                     <input type="text" id="search" name="search" placeholder="Search for products...">
-                    <button type="submit">Search</button>
-                    <div id="search-suggestions" class="suggestions-dropdown"></div>
+                    <button type="button" class="btn btn-primary">Search</button> 
+                    <div id="search-suggestions" class="suggestions-dropdown"></div>&nbsp;
                     <nav>
-                        <a href="login.html">Login</a> &nbsp; |
-                        <a href="carts.html">My Carts</a>
+                        <div class="nav navbar-nav navbar-right">
+                            <a href="login.html"><span class="glyphicon glyphicon-user"></span></a> &nbsp;
+                            <a href="carts.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class="badge">0</span></a>&nbsp;
+                        </div>
+
                     </nav>
                 </div>
             </div>
         </div>
-    </header>
 
-    <nav class="main-nav">
-        <a href="index.html"><u>Home</u></a> &nbsp; |
 
-        <!-- Collection Dropdown -->
-        <div class="dropdown">
-            <button class="dropbtn"><u>Collection</u></button>
-            <div class="dropdown-content">
-                <a href="Ensemblesforboys.html">Ensembles for Boys</a>
-                <a href="Ensemblesforgirls.html">Ensembles for Girls</a>
-                <a href="latestaddition.html">Latest Addition</a>
-                <a href="popularchoice.html">Popular Choice</a>
-                <a href="jewelry.html">Jewelry</a>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Collection<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Ensemblesforboys.html">Ensembles for Boys</a></li>
+                        <li><a href="Ensemblesforgirls.html">Ensembles for Girls</a></li>
+                        <li><a href="Latestaddition.html">Latest Addition</a></li>
+                        <li><a href="Popularchoice.html">Popular Choice</a></li>
+                        <li><a href="jewelry.html">Jewelry</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="contact.html">Contact-Us</a></li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
 
-        &nbsp; | &nbsp;
-        <a href="faqs.html"><u>FAQs</u></a> &nbsp; | &nbsp;
-    <!--- <a href="contact.html"><u>Contact Us</u></a>-->
-    </nav>
+    </header>
 
     <main>
         <div id="contact">
@@ -67,18 +86,26 @@
     
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <br>
+
+                        <div class="register-btn">
     
-                        <button class="contactbtn" type="submit">Send</button>
+                        <button class="btn btn-primary" type="button">Send</button>
+
+                        </div>
                     </form>
                 </div>
                 <div class="location">
                     <h2>Our Location</h2>
                     <p>Kadaghari, Kathmandu<br><br>Opening Hours:
                     <ul>
-                        <li>Monday - sunday: 10AM - 8PM</li>
+                        <li>Sunday - Friday: 10AM - 8PM</li>
                         <li>Saturday: Closed</li>
                     </ul></p>
-                    <iframe src=<iframe src=<iframe src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.001243697442!2d85.32137247525417!3d27.717247876176902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19007679e1c1%3A0xe8b6e5240c7f2ad9!2sKadaghari!5e0!3m2!1sen!2snp!4v1722001697785!5m2!1sen!2snp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/ggCarvpb4oriXfKt7?g_st=ic" 
+                    target="_blank"><img src="Pictures/map.png" 
+                    alt="Location Map" class="location-map"></a>
                 </div>
             </div>
         </div>
@@ -86,7 +113,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 The Elegant Ensemble.</p>
+        <p>&copy; 2024 The Elegant Ensemble. All rights reserved.</p>
     </footer>
 
     <script src="search.js"></script>

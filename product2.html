@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product 2 - The Elegant Ensemble</title>
+    <title>product2 - The Elegant Ensemble</title>
     <!-- Favicon -->
     <link rel="icon" href="Pictures/Logo.png" type="image/png">
     <!-- External CSS -->
-    <link rel="stylesheet" href="collection.css">
     <link rel="stylesheet" href="style.css">
+    <!--Bootsrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+
     <header>
         <div class="header-container">
             <div class="header-flex">
                 <div class="logo-title">
-                    <img src="Pictures/Logo.png" alt="The Elegant Ensemble Logo" class="logo">
-                    <h1>The Elegant Ensemble</h1>
+                    <img src="Pictures/Logo.png" alt="TheElegantEnsemble Logo" class="logo">
+                    <h1><b>The Elegant Ensemble</b></h1>
                 </div>
                 <div class="search-login">
                     <input type="text" id="search" name="search" placeholder="Search for products...">
-                    <button type="submit">Search</button>
+                    <button type="button" class="btn btn-primary">Search</button> 
+                    <div id="search-suggestions" class="suggestions-dropdown"></div>&nbsp;
                     <nav>
-                        <a href="login.html">Login</a> &nbsp; | &nbsp;
-                        <a href="carts.html">My Carts</a>
+                        <div class="nav navbar-nav navbar-right">
+                            <a href="login.html"><span class="glyphicon glyphicon-user"></span></a> &nbsp;
+                            <a href="carts.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class="badge">0</span></a>&nbsp;
+                        </div>
+
                     </nav>
                 </div>
             </div>
         </div>
-    </header>
 
-    <nav class="main-nav">
-        <a href="index.html"><u>Home</u></a> &nbsp; | &nbsp;
 
-        <!-- Collection Dropdown -->
-        <div class="dropdown">
-            <button class="dropbtn"><u>Collection</u></button>
-            <div class="dropdown-content">
-                <a href="Ensemblesforboys.html">Ensembles for Boys</a>
-                <a href="Ensemblesforgirls.html">Ensembles for Girls</a>
-                <a href="latestaddition.html">Latest Addition</a>
-                <a href="popularchoice.html">Popular Choice</a>
-                <a href="jewelry.html">Jewelry</a>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Collection<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Ensemblesforboys.html">Ensembles for Boys</a></li>
+                        <li><a href="Ensemblesforgirls.html">Ensembles for Girls</a></li>
+                        <li><a href="Latestaddition.html">Latest Addition</a></li>
+                        <li><a href="Popularchoice.html">Popular Choice</a></li>
+                        <li><a href="jewelry.html">Jewelry</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="contact.html">Contact-Us</a></li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
 
-        &nbsp; | &nbsp;
-        <a href="faqs.html"><u>FAQs</u></a> &nbsp; | &nbsp;
-        <a href="contact.html"><u>Contact Us</u></a>
-    </nav>
+    </header>
+   
 
-    <main style="padding: 10px; background-color: #c1c5c6;">
+    <main style="padding: 10px; background-color: #ddf6fb;">
         <section id="product2">
             <h2>ElegantEnsembles Men's Bridal Wear</h2>
             <img src="Pictures/image1.jpg" alt="image1" 
