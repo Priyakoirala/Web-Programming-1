@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs - The Elegant Ensemble</title>
     <!-- Favicon -->
-    <link rel="icon" href="Pictures/Logo.png" type="image/png">
+    <link rel="icon" href="Pictures/ Logo.png" type="image/png">
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
      <!--Bootsrap-->
@@ -31,13 +31,16 @@
                     <nav>
                         <div class="nav navbar-nav navbar-right">
                             <a href="login.html"><span class="glyphicon glyphicon-user"></span></a> &nbsp;
-                            <a href="carts.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class="badge">0</span></a>&nbsp;
+                            <a href="carts.html"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                <span class="badge">0</span></a>&nbsp;
                         </div>
 
                     </nav>
                 </div>
             </div>
         </div>
+
+
 
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -52,16 +55,17 @@
                 <ul class="nav navbar-nav">
                   <li><a href="index.html">Home</a></li>
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Collection<span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Ensembles<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="Ensemblesforboys.html">Ensembles for Boys</a></li>
-                        <li><a href="Ensemblesforgirls.html">Ensembles for Girls</a></li>
-                        <li><a href="Latestaddition.html">Latest Addition</a></li>
-                        <li><a href="Popularchoice.html">Popular Choice</a></li>
-                        <li><a href="jewelry.html">Jewelry</a></li>
+                      <li><a href="boysdress.html">Boy Dress</a></li>
+                      <li><a href="girlsdress.html">Girl Dress</a></li>
+                      <li><a href="newarrival.html">New Arrival</a></a></li>
+                      <li><a href="bestseller.html">Best Seller</a></li>
+                      <li><a href="toy.html">Toy</a></li>
                     </ul>
                   </li>
-                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="login.html">Log-In</a></li>
                   <li><a href="contact.html">Contact-Us</a></li>
                 </ul>
               </div>
@@ -72,124 +76,121 @@
 
     <main class="main-content">
         <section id="faqs">
-            <h2>Frequently Asked Questions (FAQs)</h2>
+            <h2><b>Frequently Asked Questions (FAQs)</b></h2>
 
-            <!-- FAQ Table 1 -->
-            <table class="faq-table">
-                <tr>
-                    <td>
-                        <details>
-                            <summary><strong>What payment methods are accepted?</strong></summary>
-                            <p>At Elegant Ensembles, we accept a variety of payment options, 
-                                including credit/debit cards, online banking, and mobile wallets.</p>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-            <br> <!-- Break between FAQs -->
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" 
+                    data-parent="#accordion" href="#collapse1">
+                        <h4 class="panel-title">
+                            <a><span class="glyphicon glyphicon-triangle-top"></span>
+                                What payment methods are accepted?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">At The Elegant Ensemble, we accept a variety of payment options, 
+                            including credit/debit cards, online banking, and mobile wallets.</div>
+                            
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" 
+                    data-parent="#accordion" href="#collapse2">
+                        <h4 class="panel-title">
+                            <a><span class="glyphicon glyphicon-triangle-top"></span>
+                                How can I track my order?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">After your order has been shipped, you will receive an email with a tracking number
+                            to monitor the status of your delivery at The Elegant Ensembles.</div>
+    
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" 
+                    data-parent="#accordion" href="#collapse3">
+                        <h4 class="panel-title">
+                            <a><span class="glyphicon glyphicon-triangle-top"></span>
+                                What is your return policy?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">At The Elegant Ensemble, you may return products within 30 days from receipt, 
+                            ensuring they are returned in their original condition.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" 
+                    data-parent="#accordion" href="#collapse4">
+                        <h4 class="panel-title">
+                            <a><span class="glyphicon glyphicon-triangle-top"></span>
+                                Do you offer international shipping?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">Unfortunately, we currently only ship within Nepal
+                            and do not offer international shipping options.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" 
+                    data-parent="#accordion" href="#collapse5">
+                        <h4 class="panel-title">
+                            <a><span class="glyphicon glyphicon-triangle-top"></span>
+                                How can I contact customer support?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">For assistance, please visit our website's <a href="contact.html">
+                            Contact Us</a> page to connect with our dedicated customer support team.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" 
+                    data-parent="#accordion" href="#collapse6">
+                        <h4 class="panel-title">
+                            <a><span class="glyphicon glyphicon-triangle-top"></span>
+                                What should I do if I receive a damaged product?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">In the event of receiving a damaged product, 
+                            kindly reach out to us promptly via our  <a href="contact.html">
+                                Contact Us
+                            </a> page. Please include your order details along with photos of the damage for our immediate assistance.</div>
+                    </div>
+                </div>
 
-            <!-- FAQ Table 2 -->
-            <table class="faq-table">
-                <tr>
-                    <td>
-                        <details>
-                            <summary><strong>How can I track my order?</strong></summary>
-                            <p>After your order has been shipped, you will receive an email with a tracking number
-                                 to monitor the status of your delivery at Elegant Ensembles.</p>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-            <br> <!-- Break between FAQs -->
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" 
+                    data-parent="#accordion" href="#collapse7">
+                        <h4 class="panel-title">
+                            <a><span class="glyphicon glyphicon-triangle-top"></span>Can I change or 
+                                cancel my order after placing it?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse">
+                        <div class="panel-body">You may modify or cancel your order within  
+                            2 hours of placing it. 
+                            Please contact our customer support team promptly for assistance.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" 
+                    data-parent="#accordion" href="#collapse8">
+                        <h4 class="panel-title">
+                            <a><span class="glyphicon glyphicon-triangle-top"></span>
+                                Do you have a physical store?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse8" class="panel-collapse collapse">
+                        <div class="panel-body">Certainly! Our The Elegant Ensemble is situated in Kadaghari, Kathmandu. 
+                            You are welcome to visit us any time between 10 AM and 8 PM during our regular hours.</div>
+                    </div>
+                </div>
 
-            <!-- FAQ Table 3 -->
-            <table class="faq-table">
-                <tr>
-                    <td>
-                        <details>
-                            <summary><strong>What is your return policy?</strong></summary>
-                            <p>At Elegant Ensembles, you may return products within 30 days from receipt, 
-                                ensuring they are returned in their original condition.</p>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-            <br> <!-- Break between FAQs -->
-
-            <!-- FAQ Table 4 -->
-            <table class="faq-table">
-                <tr>
-                    <td>
-                        <details>
-                            <summary><strong>Do you offer international shipping?</strong></summary>
-                            <p>Unfortunately, we currently only ship within Nepal
-                                and do not offer international shipping options.</p>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-            <br> <!-- Break between FAQs -->
-
-            <!-- FAQ Table 5 -->
-            <table class="faq-table">
-                <tr>
-                    <td>
-                        <details>
-                            <summary><strong>How can I contact customer support?</strong></summary>
-                            <p>For assistance, please visit our website's <a href="contact.html">
-                                Contact Us</a> page to connect with our dedicated customer support team.</p>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-            <br> <!-- Break between FAQs -->
-
-            <!-- FAQ Table 6 -->
-            <table class="faq-table">
-                <tr>
-                    <td>
-                        <details>
-                           <summary><strong> What should I do if I receive a damaged product?</strong></summary>
-                            <p>In the event of receiving a damaged product, 
-                                kindly reach out to us promptly via our  <a href="contact.html">
-                                    Contact Us
-                                </a> page. Please include your order details along with photos of the damage for our immediate assistance.</p>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-            <br> <!-- Break between FAQs -->
-
-            <!-- FAQ Table 7 -->
-            <table class="faq-table">
-                <tr>
-                    <td>
-                        <details>
-                            <summary><strong>Can I change or 
-                                cancel my order after placing it?</strong></summary>
-                            <p>You may modify or cancel your order within  
-                                2 hours of placing it. 
-                                Please contact our customer support team promptly for assistance.</p>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-            <br> <!-- Break between FAQs -->
-
-            <!-- FAQ Table 8 -->
-            <table class="faq-table">
-                <tr>
-                    <td>
-                        <details>
-                            <summary><strong>Do you have a physical store?</strong></summary>
-                            <p>Certainly! Our ElegantEnsembles Clothing Store is situated in Kadaghari, Kathmandu. 
-                                You are welcome to visit us any time between 10 AM and 8 PM during our regular hours.</p>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-            <br> <!-- Break between FAQs -->
-
+            </div>
         </section>
     </main>
 

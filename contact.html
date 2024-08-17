@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - The Elegant Ensemble</title>
+    <title>Home - The Elegant Ensemble</title>
     <!-- Favicon -->
     <link rel="icon" href="Pictures/Logo.png" type="image/png">
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
     <!--Bootsrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -54,16 +54,16 @@
                 <ul class="nav navbar-nav">
                   <li><a href="index.html">Home</a></li>
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Collection<span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ensembles<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="Ensemblesforboys.html">Ensembles for Boys</a></li>
-                        <li><a href="Ensemblesforgirls.html">Ensembles for Girls</a></li>
-                        <li><a href="Latestaddition.html">Latest Addition</a></li>
-                        <li><a href="Popularchoice.html">Popular Choice</a></li>
-                        <li><a href="jewelry.html">Jewelry</a></li>
+                      <li><a href="Ensemblesforboys.html">Ensembles for Boys</a></li>
+                      <li><a href="Ensemblesforgirls.html">Ensembles for Girls</a></li>
+                      <li><a href="Latestaddition.html">Latest Addition</a></li>
+                      <li><a href="Popularchoice.html">Popular Choice</a></li>
+                      <li><a href="jewelry.html">Jewelry</a></li>
                     </ul>
                   </li>
-                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="login.html">Log-In</a></li>
                   <li><a href="contact.html">Contact-Us</a></li>
                 </ul>
               </div>
@@ -73,49 +73,86 @@
     </header>
 
     <main>
-        <div id="contact">
-            <div class="contact-container">
-                <div class="contact-form">
-                    <h2>Contact Us</h2>
-                    <form action="/submit-form" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-    
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-    
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
-                        <br>
-
-                        <div class="register-btn">
-    
-                        <button class="btn btn-primary" type="button">Send</button>
-
-                        </div>
-                    </form>
-                </div>
-                <div class="location">
-                    <h2>Our Location</h2>
-                    <p>Kadaghari, Kathmandu<br><br>Opening Hours:
-                    <ul>
-                        <li>Sunday - Friday: 10AM - 8PM</li>
-                        <li>Saturday: Closed</li>
-                    </ul></p>
-                    <a href="https://maps.app.goo.gl/ggCarvpb4oriXfKt7?g_st=ic" 
-                    target="_blank"><img src="Pictures/map.png" 
-                    alt="Location Map" class="location-map"></a>
-                </div>
-            </div>
-        </div>
+        <section id="contact">
+            <h2>Contact Us</h2>
             
+            <!-- Welcome Message -->
+            <p>Welcome to our Customer Support hub at The Elegant Ensemble!  
+                Whether you have inquiries or need assistance, we're here to help. 
+                Reach out using the options below,  
+                and expect a prompt response customized to your needs.</p>
+            
+            <h3>Contact Us Form</h3>
+            <p> For any inquiries, kindly fill out the form below. 
+                </p>We are committed to responding within 24 hours to provide you with assistance.
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Phone (optional):</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br><br>
+                <button type="submit">Send</button>
+            </form>
+            
+            <br> <!-- Break between form and location -->
+
+            <!-- Location Information -->
+            <h3>Our Location</h3>
+            <p></p>Come visit us at The Elegant Ensemble, where style meets elegance.
+            <p><strong>Kadaghari, Kathmandu</strong></p>
+            <p>We eagerly await your arrival during our regular business hours.</p>
+            <a href="https://maps.app.goo.gl/ggCarvpb4oriXfKt7?g_st=ic" 
+            target="_blank"><img src="Pictures/map.png" 
+            alt="Location Map" class="location-map"></a>
+            <br><br>
+        
+            <p>Opening Hours:</p>
+            <ul>
+                <li>Monday - Sunday: 10AM - 8PM</li>
+                <li>Saturday: Closed</li>
+            </ul>
+
+            <br> <!-- Break between location and additional contact details -->
+
+            <!-- Additional Contact Details -->
+            <h3>Additional Contact Information</h3>
+            <p>In case you need immediate assistance, please feel free to contact us using the provided contact information below:</p>
+            <table class="contact-info-table">
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td><a href="tel:+977-9823358077">+977-9823358077</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td><a href="mailto:theelegantensemble@gmail.com">theelegantensemble@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Customer Support:</strong></td>
+                    <td><a href="mailto:theelegantensemble@hotmail.com">theelegantensemble@hotmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Follow Us:</strong></td>
+                    <td>
+                        <a href="https://www.facebook.com/profile.php?id=61560090484375&mibextid=LQQJ4d" 
+                        target="_blank">
+                            Facebook</a> | 
+                        <a href="https://www.instagram.com/ElegantEnsembles" target="_blank">Instagram</a> | 
+                        <a href="https://twitter.com/ElegantEnsembles" target="_blank">Twitter</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 The Elegant Ensemble. All rights reserved.</p>
     </footer>
-
-    <script src="search.js"></script>
 </body>
 </html>
